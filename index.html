@@ -20,6 +20,12 @@
       <p class="font-mono mt-2">Project built from freeCodeCamp article</p>
     </header>
 
+    <input
+      type="file"
+      id="imageInput"
+      accept="image/*"
+      class="file:bg-blue-500 file:text-white file:p-2 file:rounded-md file:border-none file:cursor-pointer bg-gray-200 p-2 mt-4 rounded-md"
+    />
     <section class="my-controls flex flex-col md:flex-row gap-8 mt-10 text-xl">
       <input
         type="text"
@@ -48,5 +54,9 @@
         Download
       </button>
     </section>
+
+    <canvas id="memeCanvas" width="600" height="450"></canvas>
+
+    <script src="script.js"></script>
   </body>
 </html>

@@ -6,3 +6,9 @@ button {
 button {
   cursor: pointer;
 }
+
+canvas {
+  border: 3px solid black;
+  margin-top: 28px;
+  border-radius: 10px;
+}
