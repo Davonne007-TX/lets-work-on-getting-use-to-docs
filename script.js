@@ -1,5 +1,6 @@
 const canvas = document.getElementById("memeCanvas");
 const ctx = canvas.getContext("2d");
+
 const imageInput = document.getElementById("imageInput");
 let uploadedImage = null;
 
