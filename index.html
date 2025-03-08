@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D's Meme Generator</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="flex flex-col justify-center items-center">
+    <header class="mt-10 text-center">
+      <h1 class="text-4xl text-blue-500">Generate My Meme..!</h1>
+      <p class="font-mono mt-2">Project built from freeCodeCamp article</p>
+    </header>
+
+    <section class="my-controls flex flex-col md:flex-row gap-8 mt-10 text-xl">
+      <input
+        type="text"
+        id="topText"
+        placeholder="Your desired Top Text"
+        class="border-3 rounded-md border-blue-500 p-2"
+      />
+      <input
+        type="text"
+        id="bottomText"
+        placeholder="Your Bottom Text"
+        class="border-3 rounded-md border-blue-500 p-2"
+      />
+      <button
+        id="generate"
+        onclick="generateMeme()"
+        class="bg-blue-500 text-white rounded p-2 hover:scale-110"
+      >
+        Generate
+      </button>
+      <button
+        id="download"
+        onclick="downloadMeme()"
+        class="bg-blue-500 text-white rounded p-2 hover:scale-110"
+      >
+        Download
+      </button>
+    </section>
+  </body>
+</html>
